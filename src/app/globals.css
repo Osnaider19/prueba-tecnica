@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html{
+  max-width: 1355px;
+  margin: 0 auto;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +29,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.content__page::-webkit-scrollbar{
+  background-color: transparent;
+  width: 10px;
+}
+
+.content__page::-webkit-scrollbar-thumb{
+  background-color: rgba(78, 86, 102, 0.7); 
 }
