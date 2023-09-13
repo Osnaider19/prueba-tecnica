@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={lato.className}>
-        <div className="relative flex w-[95%] m-auto justify-center items-center">
+        <div className="relative flex w-[95%] m-auto justify-center items-center overflow-hidden">
           <Nav />
-          <main className="w-full border-x sticky top-0  flex flex-col justify-center items-center h-screen">
+          <main className="w-full md:border-x sticky top-0  flex flex-col justify-center items-center h-screen overflow-hidden overflow-y-auto">
             <Header />
             {children}
           </main>

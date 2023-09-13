@@ -8,8 +8,7 @@ async function getPost(id) {
     `https://jsonplaceholder.typicode.com/users/${post.userId}`
   );
   const user = await dataUser.json();
-  console.log(user);
-  console.log(post);
+ 
   return { post, user };
 }
 
@@ -17,7 +16,7 @@ export default async function PostId({ params }) {
   const { post, user } = await getPost(params.id);
   return (
     <div className="flex flex-col  relative w-full h-full overflow-auto  content__page">
-      <div className="relative flex-col h-screen flex justify-start items-center py-2 w-full">
+      <div className="relative flex-col h-screen flex justify-start items-center py-5 w-full">
         <CardPost
           name={user.name}
           userId={user.id}
@@ -27,7 +26,7 @@ export default async function PostId({ params }) {
           link={"#"}
         />
       </div>
-      <div className="bg-[black] sticky top-0 w-full">
+      <div className="bg-black/95 sticky top-0 w-full">
         <p className="text-lg font-semibold text-center py-1  ">
           Comentarios
         </p>

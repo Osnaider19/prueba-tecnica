@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BiSolidUserCircle } from "react-icons/bi";
+import { ButtonReaction } from "../buttons/ButtonReaction";
 export const CardPost = ({
   username,
   name,
@@ -10,7 +11,7 @@ export const CardPost = ({
   link,
 }) => {
   return (
-    <div className="relative max-w-[400px] p-4 rounded-md bg-[rgba(255,255,255,0.1)]">
+    <div className="relative max-w-[450px] w-full p-4 rounded-md bg-[rgba(255,255,255,0.1)]">
       <Link href={link}>
         <div>
           <div className="flex">
@@ -34,6 +35,7 @@ export const CardPost = ({
           <p className="py-1">{postBody}</p>
         </div>
       </Link>
+      <ButtonReaction />
     </div>
   );
 };
