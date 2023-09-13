@@ -9,7 +9,9 @@ export const Subscribe = () => {
         recibir un pago de cuota de ingresos por anuncios.
       </p>
       <Link href={"#"}>
-        <span className="py-2 px-3 rounded-2xl bg-[#1A8CD8] my-2 inline-block">Suscribirse</span>
+        <span className="py-2 px-3 rounded-2xl bg-[#1A8CD8] my-2 inline-block">
+          Suscribirse
+        </span>
       </Link>
     </div>
   );

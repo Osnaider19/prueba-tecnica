@@ -15,7 +15,7 @@ async function getPost(id) {
 export default async function PostId({ params }) {
   const { post, user } = await getPost(params.id);
   return (
-    <div className="flex flex-col  relative w-full h-full overflow-auto  content__page">
+    <div className="flex flex-col  relative w-full h-full md:overflow-auto  content__page">
       <div className="relative flex-col h-screen flex justify-start items-center py-5 w-full">
         <CardPost
           name={user.name}

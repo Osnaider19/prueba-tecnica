@@ -8,47 +8,53 @@ import {
   MdOutlineFeaturedPlayList,
   MdOutlineVerified,
 } from "react-icons/md";
+import { BiSolidUser } from "react-icons/bi";
 
 export const routes = [
-    {
-      label: "Home",
-      icon: <RiHome7Line />,
-      link: "/",
-    },
-    {
-      label: "Explore",
-      icon: <BsSearch />,
-      link: "#",
-    },
-    {
-      label: "Notificaciones",
-      icon: <IoIosNotificationsOutline />,
-      link: "#",
-    },
-    {
-      label: "Mensajes",
-      icon: <MdOutlineMail />,
-      link: "#",
-    },
-    {
-      label: "Listas",
-      icon: <MdOutlineFeaturedPlayList />,
-      link: "#",
-    },
-    {
-      label: "Verifado",
-      icon: <MdOutlineVerified />,
-      link: "#",
-    },
-    {
-      label: "Perfil",
-      icon: <CiUser />,
-      link: "#",
-    },
-    ,
-    {
-      label: "Más opciones",
-      icon: <SlOptions />,
-      link: "#",
-    },
-  ];
+  {
+    label: "Home",
+    icon: <RiHome7Line />,
+    link: "/",
+  },
+  {
+    label: "My",
+    icon: <BiSolidUser />,
+    link: "/my",
+  },
+  {
+    label: "Explore",
+    icon: <BsSearch />,
+    link: "#",
+  },
+  {
+    label: "Notificaciones",
+    icon: <IoIosNotificationsOutline />,
+    link: "#",
+  },
+  {
+    label: "Mensajes",
+    icon: <MdOutlineMail />,
+    link: "#",
+  },
+  {
+    label: "Listas",
+    icon: <MdOutlineFeaturedPlayList />,
+    link: "#",
+  },
+  {
+    label: "Verifado",
+    icon: <MdOutlineVerified />,
+    link: "#",
+  },
+  {
+    label: "Perfil",
+    icon: <CiUser />,
+    link: "#",
+  },
+  ,
+  {
+    label: "Más opciones",
+    icon: <SlOptions />,
+    link: "#",
+  },
+];
