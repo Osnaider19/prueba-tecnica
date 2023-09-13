@@ -7,7 +7,7 @@ export default async function Home() {
   const posts = await getData("https://jsonplaceholder.typicode.com/posts");
 
   return (
-    <div className=" relative flex w-full   flex-col  py-1 md:overflow-auto content__page">
+    <div className=" relative flex w-full   flex-col  py-1 overflow-auto content__page">
       <div className="relative w-full "></div>
       <CreatePost />
       <div className="relative  flex flex-col my-5 items-center gap-4">

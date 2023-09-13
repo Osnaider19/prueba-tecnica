@@ -1,6 +1,6 @@
 export default function My() {
   return (
-    <div className="flex flex-col px-3 relative w-full h-full md:overflow-auto pb-6  content__page">
+    <div className=" flex flex-col px-3 relative w-full overflow-auto  h-screen md:overflow-auto pb-6  content__page">
       <h1 className="text-3xl py-2 font-semibold">
         Sueños y Proyección en Auco
       </h1>

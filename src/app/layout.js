@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={lato.className}>
         <div className="relative flex w-[95%] m-auto justify-center items-center overflow-hidden">
           <Nav />
-          <main className="w-full md:border-x sticky top-0  flex flex-col justify-center px-2 md:px-0 items-center h-screen overflow-hidden overflow-y-auto">
+          <main className="w-full md:border-x sticky top-0  flex flex-col justify-center items-center h-screen overflow-hidden overflow-y-auto">
             <Header />
             {children}
           </main>

@@ -11,7 +11,7 @@ export const ButtonReaction = () => {
     setLike(!like);
   };
   return (
-    <div className="flex justify-center items-center pt-1">
+    <div className="flex  justify-between md:justify-center  items-center pt-1">
       <button
         onClick={handelLinke}
         className="flex justify-center items-center gap-x-3 text-sm
